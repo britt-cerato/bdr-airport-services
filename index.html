@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BDR Airport Services | Airport Rides from Nashua, NH — Logan & Manchester</title>
+  <meta name="description" content="Private airport car service from Nashua, NH since 2003. 5-passenger SUV to Logan Airport ($180) and Manchester Airport ($75). Call or text Mark: 603-801-1960." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BDR Airport Services LLC",
+    "telephone": "+16038011960",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nashua",
+      "addressRegion": "NH",
+      "postalCode": "03061",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Nashua NH", "Merrimack NH", "Hudson NH", "Bedford NH", "Londonderry NH", "Amherst NH", "Milford NH"],
+    "foundingDate": "2003",
+    "description": "Private 5-passenger SUV airport rides from Southern NH to Logan Airport and Manchester Airport. Flat fares, no surge pricing."
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sky:      #1A9FE0;
+      --sky-dark: #0F7DB3;
+      --sky-soft: #EBF6FD;
+      --sun:      #FFB627;
+      --sun-dark: #E89F10;
+      --ink:      #0F1C25;
+      --muted:    #5A6B78;
+      --paper:    #FFFFFF;
+      --warm:     #FFFBF4;
+      --line:     #E5EDF2;
+      --green:    #16A34A;
+      --radius:   16px;
+      --shadow:   0 4px 20px rgba(15,28,37,.08);
+      --shadow-md:0 8px 32px rgba(15,28,37,.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3 { font-family: 'Poppins', system-ui, sans-serif; line-height: 1.2; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 30;
+      background: rgba(255,255,255,.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand-icon { font-size: 26px; line-height: 1; }
+    .brand-text { font-family: 'Poppins'; font-weight: 700; font-size: 16px; line-height: 1.15; }
+    .brand-text small { display: block; font-family: 'Inter'; font-size: 11px; font-weight: 500; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+    .hdr-ctas { display: flex; gap: 8px; }
+    .hdr-call { display: inline-flex; align-items: center; gap: 7px; background: var(--sky); color: #fff; font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 999px; transition: background .2s, transform .15s; white-space: nowrap; }
+    .hdr-call:hover { background: var(--sky-dark); transform: translateY(-1px); }
+    .hdr-text { display: inline-flex; align-items: center; gap: 7px; background: var(--sun); color: var(--ink); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 999px; transition: background .2s, transform .15s; white-space: nowrap; }
+    .hdr-text:hover { background: var(--sun-dark); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(150deg, #071828 0%, #0d2d47 55%, #0f3a5c 100%);
+      padding: 60px 0 52px; text-align: center; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 110%, rgba(26,159,224,.2) 0%, transparent 70%),
+        radial-gradient(1.5px 1.5px at 8%  12%, rgba(255,255,255,.5) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 22% 28%, rgba(255,255,255,.3) 0%, transparent 100%),
+        radial-gradient(2px   2px   at 68%  8%, rgba(255,255,255,.45) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 83% 22%, rgba(255,255,255,.3) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 52%  6%, rgba(255,255,255,.4) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 91% 45%, rgba(255,255,255,.35) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 14% 52%, rgba(255,255,255,.25) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    .hero .wrap { position: relative; z-index: 1; }
+
+    .est-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,182,39,.15); border: 1px solid rgba(255,182,39,.3);
+      color: var(--sun); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 999px; margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 56px); font-weight: 800;
+      color: #fff; letter-spacing: -.025em; margin-bottom: 16px;
+    }
+    .hero h1 .hl { color: var(--sun); }
+
+    .hero-sub { font-size: clamp(15px, 2vw, 18px); color: rgba(255,255,255,.72); max-width: 520px; margin: 0 auto 16px; }
+
+    /* Inline price pills in hero */
+    .hero-prices {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      margin: 0 auto 32px; max-width: 480px;
+    }
+    .price-pill {
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      border-radius: 12px; padding: 10px 18px; text-align: center; min-width: 180px;
+    }
+    .price-pill .dest { font-size: 12px; color: rgba(255,255,255,.6); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+    .price-pill .price { font-family: 'Poppins'; font-weight: 700; font-size: 22px; color: var(--sun); }
+    .price-pill .price sub { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.55); }
+
+    .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 999px; transition: transform .2s, box-shadow .2s; }
+    .btn-call { background: var(--sky); color: #fff; box-shadow: 0 4px 18px rgba(26,159,224,.45); }
+    .btn-call:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(26,159,224,.5); }
+    .btn-text { background: var(--sun); color: var(--ink); box-shadow: 0 4px 18px rgba(255,182,39,.35); }
+    .btn-text:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(255,182,39,.45); }
+
+    /* ── SUV PHOTO ── */
+    .suv-wrap { background: var(--ink); }
+    .suv-wrap img { width: 100%; max-height: 400px; object-fit: cover; display: block; }
+    .suv-placeholder {
+      background: linear-gradient(150deg, #071828 0%, #0d2d47 60%, #0a1e35 100%);
+      padding: 56px 24px; text-align: center; position: relative; overflow: hidden;
+    }
+    .suv-placeholder::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 50% 110%, rgba(26,159,224,.25) 0%, transparent 65%),
+        radial-gradient(1.5px 1.5px at 15% 20%, rgba(255,255,255,.4) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 30% 40%, rgba(255,255,255,.25) 0%, transparent 100%),
+        radial-gradient(2px   2px   at 72% 15%, rgba(255,255,255,.4) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 85% 35%, rgba(255,255,255,.3) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 55% 10%, rgba(255,255,255,.35) 0%, transparent 100%),
+        radial-gradient(1px   1px   at 90% 55%, rgba(255,255,255,.3) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    .suv-placeholder-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+    .suv-svg { width: 100%; max-width: 480px; margin: 0 auto 28px; display: block; filter: drop-shadow(0 12px 40px rgba(26,159,224,.3)); }
+    .suv-placeholder h3 { font-family: 'Poppins'; font-weight: 700; font-size: 22px; color: #fff; margin-bottom: 8px; }
+    .suv-placeholder p { color: rgba(255,255,255,.55); font-size: 15px; }
+
+    /* ── SERVICE AREA ── */
+    .area-bar { background: var(--warm); border-top: 1px solid #F0E8D6; border-bottom: 1px solid #F0E8D6; padding: 14px 0; }
+    .area-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; font-size: 14px; }
+    .area-label { font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .area-towns { color: var(--muted); }
+    .area-cta { margin-left: 6px; color: var(--sky); font-weight: 600; white-space: nowrap; }
+
+    /* ── SECTIONS ── */
+    .sec { padding: 64px 0; }
+    .sec-alt { background: var(--warm); }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--sky); }
+    .sec-title { font-size: clamp(26px, 4vw, 38px); font-weight: 700; letter-spacing: -.02em; margin: 8px 0 14px; }
+    .sec-lead { color: var(--muted); font-size: 16px; max-width: 580px; }
+
+    /* ── MARK INTRO ── */
+    .mark-box {
+      display: flex; gap: 28px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow); margin-top: 36px;
+    }
+    .mark-avatar {
+      width: 72px; height: 72px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--sky), var(--sky-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 34px;
+    }
+    .mark-body h3 { font-size: 19px; margin-bottom: 6px; }
+    .mark-body p { color: var(--muted); font-size: 15px; }
+    .mark-stats { display: flex; gap: 24px; margin-top: 14px; flex-wrap: wrap; }
+    .mark-stat { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+    .mark-stat .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+
+    /* ── FEATURE CARDS ── */
+    .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 36px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 20px; box-shadow: var(--shadow); }
+    .card .ic { font-size: 28px; margin-bottom: 12px; }
+    .card h3 { font-size: 17px; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 14px; }
+
+    /* ── PRICING ── */
+    .price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
+    .price-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    .price-card h3 { font-size: 18px; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .pc-tag { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--sky-dark); background: var(--sky-soft); padding: 3px 9px; border-radius: 999px; }
+    .fare { display: flex; align-items: baseline; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+    .fare:last-child { border-bottom: none; }
+    .fare .route { font-size: 14px; font-weight: 500; color: var(--muted); }
+    .fare .amt { font-family: 'Poppins'; font-weight: 700; font-size: 22px; color: var(--ink); white-space: nowrap; }
+    .price-note { margin-top: 20px; font-size: 13px; color: var(--muted); text-align: center; }
+    .price-tip {
+      margin-top: 16px; background: var(--sky-soft); border-radius: 10px;
+      padding: 12px 16px; font-size: 13px; color: var(--sky-dark); text-align: center;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 36px; }
+    .step { text-align: center; }
+    .step-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--sky); color: #fff;
+      font-family: 'Poppins'; font-weight: 700; font-size: 20px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px; box-shadow: 0 4px 14px rgba(26,159,224,.35);
+    }
+    .step h3 { font-size: 16px; margin-bottom: 6px; }
+    .step p { color: var(--muted); font-size: 14px; }
+
+    /* ── REVIEWS ── */
+    .stars { color: var(--sun); font-size: 18px; letter-spacing: 2px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 36px; }
+    .review-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 20px; box-shadow: var(--shadow); }
+    .review-card .r-stars { color: var(--sun); font-size: 14px; margin-bottom: 10px; }
+    .review-card blockquote { font-size: 14px; color: var(--ink); line-height: 1.65; font-style: italic; }
+    .review-card .r-name { margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--muted); }
+    .yelp-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 28px; font-size: 13px; font-weight: 600; color: var(--sky); }
+    .yelp-link:hover { text-decoration: underline; }
+
+    /* ── PAYMENT ── */
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
+    .panel { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+    .panel h3 { font-size: 17px; margin-bottom: 14px; }
+    .panel ul { list-style: none; }
+    .panel li { padding: 9px 0 9px 26px; position: relative; font-size: 14px; border-bottom: 1px solid var(--line); }
+    .panel li:last-child { border-bottom: none; }
+    .panel li::before { content: '✓'; position: absolute; left: 0; color: var(--sky); font-weight: 700; }
+    .panel li small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+    /* ── CONTACT ── */
+    .contact-sec {
+      background: linear-gradient(150deg, #071828 0%, #0d2d47 100%);
+      padding: 72px 0; text-align: center;
+    }
+    .contact-sec .eyebrow { color: var(--sun); }
+    .contact-sec .sec-title { color: #fff; }
+    .contact-box {
+      max-width: 500px; margin: 36px auto 0;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13);
+      border-radius: 22px; padding: 40px 32px;
+    }
+    .big-num {
+      display: block; font-family: 'Poppins'; font-weight: 800;
+      font-size: clamp(34px, 6vw, 52px); color: var(--sun);
+      letter-spacing: -.02em; margin-bottom: 6px;
+    }
+    .contact-sub { color: rgba(255,255,255,.6); font-size: 14px; margin-bottom: 26px; }
+    .contact-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .addr { color: rgba(255,255,255,.35); font-size: 12px; margin-top: 26px; }
+
+    /* ── FOOTER ── */
+    footer { padding: 24px 0; text-align: center; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 760px) {
+      .grid-3, .price-grid, .steps, .two, .reviews-grid { grid-template-columns: 1fr; }
+      .hdr-text { display: none; }
+      .brand-text small { display: none; }
+      .mark-box { flex-direction: column; }
+      .contact-box { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="wrap bar">
+    <div class="brand">
+      <div class="brand-icon">✈️</div>
+      <div class="brand-text">
+        BDR Airport Services
+        <small>Est. 2003 · Nashua, NH</small>
+      </div>
+    </div>
+    <div class="hdr-ctas">
+      <a class="hdr-text" href="sms:6038011960">💬 Text to book</a>
+      <a class="hdr-call" href="tel:6038011960">📞 603-801-1960</a>
+    </div>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="est-tag">★ Serving Southern NH since 2003</div>
+    <h1>Need a ride to <span class="hl">Logan or Manchester</span> airport?</h1>
+    <p class="hero-sub">Private 5-passenger SUV. Flat rates. No app, no surge pricing. Just call or text Mark.</p>
+
+    <div class="hero-prices">
+      <div class="price-pill">
+        <div class="dest">Logan Airport (BOS)</div>
+        <div class="price">from $180 <sub>flat rate</sub></div>
+      </div>
+      <div class="price-pill">
+        <div class="dest">Manchester Airport (MHT)</div>
+        <div class="price">from $75 <sub>flat rate</sub></div>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a class="btn btn-call" href="tel:6038011960">📞 Call 603-801-1960</a>
+      <a class="btn btn-text" href="sms:6038011960">💬 Text to book</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SUV PHOTO ── -->
+<div class="suv-wrap">
+  <!-- When you have the photo, replace the entire .suv-placeholder div with:
+       <img src="your-photo.jpg" alt="BDR Airport Services 5-passenger SUV"> -->
+  <div class="suv-placeholder">
+    <div class="suv-placeholder-inner">
+      <!-- Simple SVG silhouette of an SUV with a plane -->
+      <svg class="suv-svg" viewBox="0 0 480 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Ground -->
+        <rect x="0" y="148" width="480" height="2" rx="1" fill="rgba(255,255,255,0.1)"/>
+        <!-- SUV body -->
+        <rect x="60" y="90" width="300" height="58" rx="10" fill="#1a2e42"/>
+        <!-- SUV roof -->
+        <path d="M120 90 L150 52 L300 52 L330 90Z" fill="#1e3650"/>
+        <!-- Windows -->
+        <rect x="158" y="58" width="56" height="28" rx="4" fill="rgba(26,159,224,0.35)"/>
+        <rect x="222" y="58" width="70" height="28" rx="4" fill="rgba(26,159,224,0.35)"/>
+        <!-- Wheels -->
+        <circle cx="140" cy="150" r="22" fill="#0d1e2c"/>
+        <circle cx="140" cy="150" r="13" fill="#1a2e42"/>
+        <circle cx="140" cy="150" r="5" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="320" cy="150" r="22" fill="#0d1e2c"/>
+        <circle cx="320" cy="150" r="13" fill="#1a2e42"/>
+        <circle cx="320" cy="150" r="5" fill="rgba(255,255,255,0.3)"/>
+        <!-- Headlights -->
+        <rect x="356" y="104" width="18" height="10" rx="3" fill="rgba(255,220,100,0.7)"/>
+        <ellipse cx="370" cy="109" rx="14" ry="6" fill="rgba(255,220,100,0.12)"/>
+        <!-- Taillights -->
+        <rect x="62" y="104" width="12" height="10" rx="3" fill="rgba(255,80,80,0.6)"/>
+        <!-- Door line -->
+        <line x1="230" y1="92" x2="230" y2="146" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+        <!-- Plane in upper right -->
+        <g transform="translate(370, 28) rotate(-15)">
+          <path d="M0 8 L40 2 L44 8 L40 14 L0 8Z" fill="rgba(255,255,255,0.55)"/>
+          <path d="M10 8 L18 -4 L24 -2 L18 8Z" fill="rgba(255,255,255,0.45)"/>
+          <path d="M6 8 L10 18 L16 17 L12 8Z" fill="rgba(255,255,255,0.35)"/>
+        </g>
+        <!-- Stars/lights in sky -->
+        <circle cx="50"  cy="30" r="1.5" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="200" cy="20" r="1"   fill="rgba(255,255,255,0.4)"/>
+        <circle cx="280" cy="35" r="1.2" fill="rgba(255,255,255,0.45)"/>
+        <circle cx="420" cy="60" r="1"   fill="rgba(255,255,255,0.35)"/>
+        <circle cx="100" cy="45" r="1"   fill="rgba(255,255,255,0.3)"/>
+      </svg>
+      <h3>Private 5-Passenger SUV — Clean, Comfortable &amp; On Time</h3>
+      <p>Non-smoking, well maintained, and plenty of room for you and your luggage.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── SERVICE AREA ── -->
+<div class="area-bar">
+  <div class="wrap">
+    <div class="area-inner">
+      <span class="area-label">📍 Pickup areas:</span>
+      <span class="area-towns">Nashua · Merrimack · Hudson · Bedford · Londonderry · Amherst · Milford · and surrounding Southern NH</span>
+      <a class="area-cta" href="tel:6038011960">Not sure? Just call →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── MEET MARK ── -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Your driver</span>
+    <h2 class="sec-title">One driver. One vehicle. 100% focused on you.</h2>
+    <p class="sec-lead">When you book BDR, you're booking Mark — the same driver who's been making this run since 2003.</p>
+    <div class="mark-box">
+      <div class="mark-avatar">👤</div>
+      <div class="mark-body">
+        <h3>Mark L. — Owner &amp; Driver</h3>
+        <p>No dispatch, no strangers, no guessing who shows up. Mark handles every booking personally and has been doing it for over 20 years. His customers keep coming back because he treats every ride like it matters — because to him, it does.</p>
+        <div class="mark-stats">
+          <div class="mark-stat"><span class="dot"></span> Established 2003</div>
+          <div class="mark-stat"><span class="dot"></span> 5-star rated on Yelp</div>
+          <div class="mark-stat"><span class="dot"></span> Properly permitted at both airports</div>
+          <div class="mark-stat"><span class="dot"></span> Early flights welcome</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY BDR ── -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="eyebrow">Why choose BDR</span>
+    <h2 class="sec-title">Simple, reliable, no surprises.</h2>
+    <p class="sec-lead">The local alternative to rideshare apps — with someone you can actually call.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="ic">🕒</div>
+        <h3>Always on time</h3>
+        <p>Mark plans around your flight — early morning departures are his specialty.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🚙</div>
+        <h3>Comfortable SUV</h3>
+        <p>Private 5-passenger SUV, non-smoking, clean, and plenty of room for luggage.</p>
+      </div>
+      <div class="card">
+        <div class="ic">💲</div>
+        <h3>Flat rates</h3>
+        <p>No surge pricing, no meter running. The price you see is the price you pay.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Getting started</span>
+    <h2 class="sec-title">How to book</h2>
+    <p class="sec-lead">No app needed. Just a quick call or text, at least 24 hours before your flight.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Call or text Mark</h3>
+        <p>Reach out to 603-801-1960. At least 24 hours ahead so your ride is guaranteed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Confirm your pickup</h3>
+        <p>Mark will confirm the time, address, and flat rate — no surprises on the day.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>We'll be there</h3>
+        <p>Mark arrives on time, loads your bags, and gets you to your gate stress-free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="eyebrow">Flat rates</span>
+    <h2 class="sec-title">What you'll pay</h2>
+    <p class="sec-lead">Set prices from Nashua, NH. Call for pickups from other towns.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>✈️ Logan Airport <span class="pc-tag">Boston</span></h3>
+        <div class="fare"><span class="route">Nashua → Logan</span><span class="amt">$180</span></div>
+        <div class="fare"><span class="route">Logan → Nashua</span><span class="amt">$195</span></div>
+      </div>
+      <div class="price-card">
+        <h3>✈️ Manchester Airport <span class="pc-tag">MHT</span></h3>
+        <div class="fare"><span class="route">Nashua → Manchester</span><span class="amt">$75</span></div>
+        <div class="fare"><span class="route">Manchester → Nashua</span><span class="amt">$80</span></div>
+      </div>
+    </div>
+    <p class="price-tip">💡 Tip is appreciated — 20% is customary. Pickups available throughout Southern NH &amp; New England — call for a custom quote.</p>
+    <p class="price-note">Also serving South Station (Boston). Other routes available — just ask.</p>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">What customers say</span>
+    <h2 class="sec-title">5 stars on Yelp</h2>
+    <p class="sec-lead">Real reviews from real customers — Mark has been earning repeat business for over 20 years.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <blockquote>"Mark is great! His communication was amazing, he was early, and most of all he's a wonderful person. Long after he dropped me off my flight was delayed and he texted me to check in."</blockquote>
+        <div class="r-name">— Jenna O., Nashua NH</div>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <blockquote>"My flight was cancelled and I had to get to Boston. He helped me figure out other transportation — not to his benefit. When he ended up early he waited at my hotel until the agreed pickup. What a great start to an already harrowing day!"</blockquote>
+        <div class="r-name">— Michael E.</div>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <blockquote>"Reliable, professional service with flexibility &amp; a good sense of humor. I use him for frequent business travel. Recommend highly!"</blockquote>
+        <div class="r-name">— Ann T., Hollis NH</div>
+      </div>
+    </div>
+    <a class="yelp-link" href="https://www.yelp.com/biz/bdr-airport-services-llc-nashua-11" target="_blank" rel="noopener">Read all reviews on Yelp →</a>
+  </div>
+</section>
+
+<!-- ── PAYMENT ── -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="eyebrow">Good to know</span>
+    <h2 class="sec-title">Payment &amp; booking</h2>
+    <div class="two">
+      <div class="panel">
+        <h3>💳 Ways to pay</h3>
+        <ul>
+          <li>Venmo or PayPal<small>Preferred — no added fees</small></li>
+          <li>Cash<small>Always welcome</small></li>
+          <li>Credit &amp; debit cards<small>Accepted via Square — 7.77% processing fee applies. Receipt emailed automatically.</small></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>📋 Booking policy</h3>
+        <ul>
+          <li>Book at least 24 hours ahead<small>Guarantees your ride is held for you</small></li>
+          <li>Early flights are no problem<small>Mark regularly runs 4am and 5am pickups</small></li>
+          <li>Late cancellation fee applies<small>50% of the fare for late cancellations</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-sec">
+  <div class="wrap">
+    <span class="eyebrow">Ready to book?</span>
+    <h2 class="sec-title">Call or text Mark directly</h2>
+    <div class="contact-box">
+      <a class="big-num" href="tel:6038011960">603-801-1960</a>
+      <p class="contact-sub">Mark responds quickly — usually within 15 minutes.</p>
+      <div class="contact-ctas">
+        <a class="btn btn-call" href="tel:6038011960">📞 Call now</a>
+        <a class="btn btn-text" href="sms:6038011960">💬 Send a text</a>
+      </div>
+      <p class="addr">BDR Airport Services LLC · PO Box 119, Nashua, NH 03061</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © <span id="yr"></span> BDR Airport Services LLC · Established 2003 · Nashua, New Hampshire
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

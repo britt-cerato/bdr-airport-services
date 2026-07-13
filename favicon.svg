@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0F2236"/>
+  <!-- Falcon silhouette -->
+  <g fill="#1A8FC4">
+    <!-- Body -->
+    <ellipse cx="32" cy="34" rx="7" ry="10" transform="rotate(-10 32 34)"/>
+    <!-- Head -->
+    <ellipse cx="36" cy="22" rx="5" ry="5.5" transform="rotate(-5 36 22)"/>
+    <!-- Beak -->
+    <path d="M40 21 L44 24 L40 25 Z" fill="#C8922A"/>
+    <!-- Left wing extended (soaring) -->
+    <path d="M26 30 C18 24, 8 20, 4 22 C10 26, 16 30, 22 34 Z"/>
+    <!-- Right wing extended -->
+    <path d="M38 30 C46 24, 54 19, 58 21 C52 25, 46 29, 40 34 Z"/>
+    <!-- Tail feathers -->
+    <path d="M28 43 C26 50, 22 54, 20 56 C24 54, 28 52, 30 47 Z"/>
+    <path d="M32 44 C32 51, 30 56, 30 58 C33 55, 34 51, 34 46 Z"/>
+    <path d="M36 43 C38 50, 42 54, 44 56 C40 54, 36 52, 34 47 Z"/>
+    <!-- Eye -->
+    <circle cx="38" cy="20" r="1.5" fill="#0F2236"/>
+    <circle cx="38.5" cy="19.5" r="0.5" fill="#fff"/>
+  </g>
+</svg>

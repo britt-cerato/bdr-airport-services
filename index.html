@@ -3,18 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BDR Airport Services | Airport Rides from Nashua, NH</title>
-  <meta name="description" content="Private airport car service from Nashua, NH since 2003. 4-passenger SUV to Logan Airport and Manchester Airport. Call or text Mark for a quote: 603-801-1960." />
+  <title>Airport Transportation from Nashua NH | BDR Airport Services</title>
+  <meta name="description" content="Private SUV service from Nashua NH to Logan Airport (Boston) and Manchester Airport since 2003. Call or text Mark directly — no dispatcher, no surprises. 603-801-1960." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bdrairportservices.com/" />
 
+  <!-- Geo -->
+  <meta name="geo.region" content="US-NH" />
+  <meta name="geo.placename" content="Nashua, New Hampshire" />
+  <meta name="geo.position" content="42.7654;-71.4676" />
+  <meta name="ICBM" content="42.7654, -71.4676" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bdrairportservices.com/" />
+  <meta property="og:title" content="Airport Transportation from Nashua NH | BDR Airport Services" />
+  <meta property="og:description" content="Private SUV service to Logan Airport (Boston) and Manchester Airport from Nashua NH. Call or text Mark directly — no dispatcher, no surprises. 603-801-1960." />
+  <meta property="og:image" content="https://bdrairportservices.com/apple-touch-icon.png" />
+  <meta property="og:image:width" content="180" />
+  <meta property="og:image:height" content="180" />
+  <meta property="og:site_name" content="BDR Airport Services LLC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Airport Transportation from Nashua NH | BDR Airport Services" />
+  <meta name="twitter:description" content="Private SUV service to Logan Airport and Manchester Airport from Nashua NH. Call or text Mark: 603-801-1960." />
+  <meta name="twitter:image" content="https://bdrairportservices.com/apple-touch-icon.png" />
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BDR Airport Services LLC",
-    "telephone": "+16038011960",
-    "address": { "@type": "PostalAddress", "addressLocality": "Nashua", "addressRegion": "NH", "postalCode": "03061", "addressCountry": "US" },
-    "areaServed": ["Nashua NH","Merrimack NH","Hudson NH","Bedford NH","Londonderry NH","Amherst NH","Milford NH"],
-    "foundingDate": "2003"
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "TaxiService"],
+        "@id": "https://bdrairportservices.com/#business",
+        "name": "BDR Airport Services LLC",
+        "description": "Private SUV airport transportation from Nashua, NH to Logan Airport (Boston) and Manchester-Boston Regional Airport. Owner-operated since 2003. Book direct with Mark — no dispatcher.",
+        "url": "https://bdrairportservices.com",
+        "telephone": "+16038011960",
+        "foundingDate": "2003",
+        "logo": "https://bdrairportservices.com/BDR.png",
+        "image": "https://bdrairportservices.com/BDR.png",
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Venmo, PayPal",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "PO Box 119",
+          "addressLocality": "Nashua",
+          "addressRegion": "NH",
+          "postalCode": "03061",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.7654,
+          "longitude": -71.4676
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Nashua", "containedInPlace": { "@type": "State", "name": "New Hampshire" } },
+          { "@type": "City", "name": "Merrimack" },
+          { "@type": "City", "name": "Hudson" },
+          { "@type": "City", "name": "Bedford" },
+          { "@type": "City", "name": "Londonderry" },
+          { "@type": "City", "name": "Amherst" },
+          { "@type": "City", "name": "Milford" }
+        ],
+        "sameAs": [
+          "https://www.yelp.com/biz/bdr-airport-services-llc-nashua-11"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Airport Transportation Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Logan Airport Transportation from Nashua NH", "description": "Private SUV rides from Southern New Hampshire to Boston Logan International Airport (BOS)." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manchester Airport Transportation from Nashua NH", "description": "Private SUV rides from Southern New Hampshire to Manchester-Boston Regional Airport (MHT)." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "South Station Transportation from Nashua NH", "description": "Private SUV rides from Southern New Hampshire to Boston South Station." } }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1",
+          "reviewCount": "3"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Jenna O." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Mark is great! His communication was amazing, he was early, and most of all he's a wonderful person. Long after he dropped me off my flight was delayed and he texted me to check in."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Michael E." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "My flight was cancelled and I needed to get to Boston. He helped me figure out other transportation — not to his own benefit. What a great start to an already harrowing day."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Ann T." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Reliable, professional service with flexibility and a good sense of humor. I use him for frequent business travel. Recommend highly."
+          }
+        ]
+      }
+    ]
   }
   </script>
 

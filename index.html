@@ -309,11 +309,22 @@
     footer a { color: var(--sky); font-weight: 600; }
     footer a:hover { text-decoration: underline; }
 
+    /* ── WHAT TO EXPECT ── */
+    .expect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center; }
+    .expect-photo img { width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(15,34,54,.14); display: block; }
+    .expect-features { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+    .expect-feat { display: flex; gap: 14px; align-items: flex-start; }
+    .expect-feat-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .expect-feat-text strong { display: block; font-size: 13.5px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+    .expect-feat-text span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .expect-cta { display: inline-flex; align-items: center; gap: 7px; background: var(--sky); color: #fff; font-weight: 600; font-size: 14px; padding: 11px 24px; border-radius: 4px; transition: background .2s; margin-top: 28px; }
+    .expect-cta:hover { background: var(--sky-dark); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 760px) {
       .hero-inner { grid-template-columns: 1fr; }
       .hero-prices { display: none; }
-      .about-grid, .contact-inner { grid-template-columns: 1fr; }
+      .about-grid, .contact-inner, .expect-grid { grid-template-columns: 1fr; }
       .feat-grid, .steps, .pricing-wrap, .reviews-grid, .policy-wrap { grid-template-columns: 1fr; }
       .hdr-ctas .btn-text { display: none; }
     }
@@ -359,11 +370,6 @@
   </div>
 </section>
 
-<!-- SUV PHOTO -->
-<div class="suv-wrap">
-  <img src="BDR car 2.jpeg" alt="BDR Airport Services SUV — Mark's clean, comfortable Mercedes for airport transportation" style="width:100%; max-height:520px; object-fit:contain; background:#0a1820; display:block;" />
-</div>
-
 <!-- SERVICE AREA BAND -->
 <div class="band">
   <div class="wrap">
@@ -392,6 +398,41 @@
         <div class="cred"><div class="cred-icon">✈️</div><div><strong>Properly permitted</strong><span>Licensed to pick up at Logan and Manchester airports</span></div></div>
         <div class="cred"><div class="cred-icon">⭐</div><div><strong>5-star rated on Yelp</strong><span>Consistent reviews for reliability and professionalism</span></div></div>
         <div class="cred"><div class="cred-icon">🌙</div><div><strong>Early flights, no problem</strong><span>4am and 5am pickups are part of the routine</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="expect-grid">
+      <div class="expect-photo">
+        <img src="BDR car 2.jpeg" alt="Mark's Mercedes SUV — clean, spacious, and ready for your airport run" />
+      </div>
+      <div class="expect-content">
+        <span class="kicker">The experience</span>
+        <h2 class="sec-title">What to Expect</h2>
+        <p class="sec-lead">Travel in a clean, spacious Mercedes SUV with plenty of room for passengers and luggage. Every ride is private, comfortable, and focused on getting you to the airport safely and on time.</p>
+        <div class="expect-features">
+          <div class="expect-feat">
+            <div class="expect-feat-icon">🪑</div>
+            <div class="expect-feat-text"><strong>Spacious seating</strong><span>Comfortable room for up to four passengers</span></div>
+          </div>
+          <div class="expect-feat">
+            <div class="expect-feat-icon">🧳</div>
+            <div class="expect-feat-text"><strong>Plenty of luggage room</strong><span>No cramming — your bags travel comfortably too</span></div>
+          </div>
+          <div class="expect-feat">
+            <div class="expect-feat-icon">🔒</div>
+            <div class="expect-feat-text"><strong>Private transportation</strong><span>Never a shared ride — the vehicle is yours alone</span></div>
+          </div>
+          <div class="expect-feat">
+            <div class="expect-feat-icon">✨</div>
+            <div class="expect-feat-text"><strong>Clean &amp; well-maintained</strong><span>Non-smoking, consistently cleaned and cared for</span></div>
+          </div>
+        </div>
+        <a href="#contact" class="expect-cta">Reserve Your Ride</a>
       </div>
     </div>
   </div>
@@ -500,7 +541,7 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact-sec">
+<section class="contact-sec" id="contact">
   <div class="wrap">
     <div class="contact-inner" style="grid-template-columns:1fr;">
       <div class="contact-right" style="max-width:460px; margin:0 auto;">

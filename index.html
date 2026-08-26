@@ -312,7 +312,7 @@
 
     /* ── WHAT TO EXPECT ── */
     .expect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center; }
-    .expect-photo img { width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(15,34,54,.14); display: block; }
+    .expect-photo img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(15,34,54,.14); display: block; }
     .expect-features { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
     .expect-feat { display: flex; gap: 14px; align-items: flex-start; }
     .expect-feat-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
@@ -409,7 +409,7 @@
   <div class="wrap">
     <div class="expect-grid">
       <div class="expect-photo">
-        <img src="BDR car 2.jpeg" alt="Mark's Mercedes SUV: clean, spacious, and ready for your airport run" />
+        <img src="bdr-car.jpg" width="1200" height="900" loading="lazy" alt="Mark's Mercedes SUV: clean, spacious, and ready for your airport run" />
       </div>
       <div class="expect-content">
         <span class="kicker">The experience</span>

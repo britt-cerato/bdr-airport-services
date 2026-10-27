@@ -247,6 +247,15 @@
     .suv-placeholder h3 { font-family: 'Lora', serif; font-size: 17px; color: rgba(255,255,255,.8); margin-bottom: 4px; }
     .suv-placeholder p { font-size: 13px; color: rgba(255,255,255,.4); }
 
+    /* ── PREFERRED VENDOR ── */
+    .vendor-sec { padding: 28px 0; background: var(--sky-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .vendor-card { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .vendor-text .kicker { color: var(--sky-dark); margin-bottom: 4px; }
+    .vendor-text h3 { font-family: 'Lora', serif; font-size: 18px; color: var(--navy); margin-bottom: 4px; }
+    .vendor-text p { font-size: 14px; color: var(--ink); }
+    .vendor-cta { display: inline-flex; align-items: center; gap: 7px; background: var(--navy); color: #fff; font-weight: 600; font-size: 14px; padding: 11px 24px; border-radius: 4px; transition: background .2s; white-space: nowrap; }
+    .vendor-cta:hover { background: var(--sky-dark); }
+
     /* ── STRIP BANDS ── */
     .band { padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--light); }
     .band-inner { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; font-size: 13px; }
@@ -624,16 +633,18 @@
 </section>
 
 <!-- PREFERRED VENDOR -->
-<div class="band">
+<section class="vendor-sec">
   <div class="wrap">
-    <div class="band-inner">
-      <strong>Preferred vendor:</strong>
-      <span>Fisher Shipping, for car shipping and vehicle transport. Ask for Sue in sales.</span>
-      <span class="sep">|</span>
-      <a href="https://fishershipping.com" target="_blank" rel="noopener">Visit Fisher Shipping</a>
+    <div class="vendor-card">
+      <div class="vendor-text">
+        <span class="kicker">Preferred vendor</span>
+        <h3>Fisher Shipping</h3>
+        <p>Car shipping and vehicle transport. Ask for Sue in sales.</p>
+      </div>
+      <a href="https://fishershipping.com" target="_blank" rel="noopener" class="vendor-cta">Visit Fisher Shipping</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- FOOTER -->
 <footer>
